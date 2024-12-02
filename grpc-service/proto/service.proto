@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package service;
+
+service FileService {
+  rpc ProcessFile (FileRequest) returns (FileResponse);
+}
+
+message FileRequest {
+  bytes data = 1;
+}
+
+message FileResponse {
+  string status = 1;
+}
