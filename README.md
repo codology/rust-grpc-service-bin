@@ -1,6 +1,6 @@
 # gRPC Service with Python Client, RabbitMQ, Prometheus, and Grafana
 
-A simple gRPC service in Rust, which processes a 64-byte binary payload received from a Python client. The service writes the payload data to a file on disk and returns a status message. The Python client listens for messages from a RabbitMQ queue, sends the data to the gRPC service, and displays the response.
+A simple gRPC service in [Rust](https://www.rust-lang.org/tools/install), which processes a 64-byte binary payload received from a Python client. The service writes the payload data to a file on disk and returns a status message. The Python client listens for messages from a RabbitMQ queue, sends the data to the gRPC service, and displays the response.
 
 Also includes Prometheus metrics to monitor the service, which can be visualized using Grafana.
 
